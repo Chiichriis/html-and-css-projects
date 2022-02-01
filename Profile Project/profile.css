@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Mochi;
+    src: url(../fonts/MochiyPopOne-Regular.ttf);
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    height: fit-content;
+    font-family: Poppins;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+}
+
+.logo{
+    font-size: 1rem;
+    color: rgb(77, 7, 7);
+    font-family: Mochi;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+}
+
+.list{
+    margin: 0 1rem;
+}
+
+.link{
+    text-decoration: none;
+    font-size: .9rem;
+    color: rgb(77, 7, 7);
+    padding: .3rem;
+    font-family: Poppins;
+}
+
+.link:hover{
+    border-bottom: solid rgb(77, 7, 7);
+    border-width: .1rem;
+    padding-bottom: .4rem;
+    transition: ease-out .5s;
+}
+
+.link--active{
+    border-bottom: solid rgb(77, 7, 7);
+    border-width: .1rem;
+    padding-bottom: .4rem;
+}
+
+.btn{
+    background-color: rgb(77, 7, 7);
+    color: white;
+    border-width: .1rem;
+    height: 2.3rem;
+    width: 7rem;
+    font-size: .9rem;
+    border-radius: .3rem;
+    border: none;
+    font-family: Poppins;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(77, 7, 7);
+    cursor: pointer;
+    border-color: rgb(77, 7, 7);
+    transform: scale(1.1);
+    transition: ease-in-out .5s;
+}
+
+.main{
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 70%;
+    background-color: rosybrown;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-heading{
+    font-size: 5rem;
+    color: rgb(77, 7, 7);
+    font-family: Mochi;
+}
+
+.main-subtext{
+    float: right;
+    text-align: center;
+    color: rgb(77, 7, 7);
+    font-size: .9rem;
+    font-family: Poppins;
+}
+
+.profile{
+    background-color: white;
+    position: absolute;
+    top: 30rem;
+    width: 100%;
+    height: auto;
+}
+
+.profile-content{
+    display: flex;
+    margin: 5rem;
+    justify-content: center;
+}
+
+.profile-text{
+    text-align: justify;
+    margin: 0  5rem 0 0;
+    font-family: Poppins;
+}
+
+.profile-heading{
+    margin: 2rem 0;
+    font-size: 2.3rem;
+    color: rgb(77, 7, 7);
+}
+
+.profile-subtext{
+   text-align: justify;
+   font-size: .9rem;
+}
+
+img{
+    height: 25rem;
+    width: auto;
+    border-radius: .5rem;
+    box-shadow: 1rem 1rem 5rem 0rem darkgray;
+}
+
+img:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .5s;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    top: 65rem;
+    background-color: none;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.fab{
+    margin: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(77, 7, 7);
+}
+
+.fab:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .5s;
+}
